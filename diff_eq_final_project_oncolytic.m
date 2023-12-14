@@ -5,7 +5,7 @@
 
 % Solve the system of differential equations.
 tspan = [0, 200]; % domain for solutions
-c0 = [1, 1, 0]; % initial condition
+c0 = [10, 1, 0]; % initial condition
 
 a = 0.1;
 b = 0.01;
@@ -65,7 +65,7 @@ hold off
 
 
 
-t_start = 0; t_end = 50000;     %set suitable time range
+t_start = 0; t_end = 500;     %set suitable time range
 t_duration = [t_start t_end];   %create vector for time
 w_initial = [100; 1; 10];       %column vector containing initial values
 dwdt = @(t,w) [a.*w(1)-b.*w(1).*w(3); b.*w(1).*w(3)-d.*w(2); N*d.*w(2)-g.*w(3)];
