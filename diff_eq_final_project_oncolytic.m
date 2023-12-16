@@ -61,10 +61,6 @@ hold off
 
 
 
-
-
-
-
 t_start = 0; t_end = 500;     %set suitable time range
 t_duration = [t_start t_end];   %create vector for time
 w_initial = [100; 1; 10];       %column vector containing initial values
